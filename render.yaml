@@ -1,0 +1,18 @@
+# Deploy on Render (https://render.com). Two easy options:
+#
+# A) Static Site (simplest, no server):
+#    New + > Static Site > pick this repo > Publish Directory: public
+#
+# B) Web Service (uses the zero-dependency Node server below):
+#    New + > Blueprint > pick this repo. Nothing to configure.
+#
+# There are NO API keys or third-party services. The app runs entirely
+# in the browser; the server only serves static files.
+services:
+  - type: web
+    name: neurobloom
+    runtime: node
+    plan: free
+    buildCommand: ""        # no dependencies to install
+    startCommand: npm start
+    healthCheckPath: /healthz

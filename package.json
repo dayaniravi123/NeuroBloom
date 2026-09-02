@@ -1,0 +1,13 @@
+{
+  "name": "neurobloom",
+  "version": "1.0.0",
+  "description": "A calm, low-stimulation companion for concussion recovery and mental wellness. Fully on-device: no APIs, no third-party services, no dependencies.",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {},
+  "license": "MIT"
+}
